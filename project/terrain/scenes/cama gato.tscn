@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://dss677sm1vb8s"]
+
+[ext_resource type="Texture2D" uid="uid://wcst8xe4xbq6" path="res://terrain/assets/interior/sprite cama gato.png" id="1_1qdtn"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2ga1t"]
+size = Vector2(4285.7, 2639.99)
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(10.5, 11.5125)
+scale = Vector2(0.062037, 0.062037)
+texture = ExtResource("1_1qdtn")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(9.74999, 31.25)
+scale = Vector2(0.0145834, 0.0145834)
+shape = SubResource("RectangleShape2D_2ga1t")

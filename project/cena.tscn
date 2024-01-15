@@ -1,0 +1,26 @@
+[gd_scene load_steps=2 format=3 uid="uid://bpf1a3r5w0q5q"]
+
+[ext_resource type="PackedScene" uid="uid://iydjf31b4lf0" path="res://caracter/scenes/character.tscn" id="2_1nap4"]
+
+[node name="Node2D"]
+
+[node name="cama" parent="texture/map" index="1"]
+position = Vector2(-342.517, -15.3366)
+
+[node name="parede-2" parent="texture/map" index="7"]
+position = Vector2(5.112, 464.541)
+scale = Vector2(1, 0.999999)
+
+[node name="parede-3" parent="texture/map" index="8"]
+position = Vector2(542.492, -5.11218)
+scale = Vector2(1, 0.999999)
+
+[node name="parede-4" parent="texture/map" index="9"]
+position = Vector2(-568.503, -2.55612)
+scale = Vector2(1, 0.999999)
+
+[node name="gato" parent="texture/map" index="11"]
+position = Vector2(-150.81, 89.4634)
+
+[node name="Character" parent="." index="1" instance=ExtResource("2_1nap4")]
+position = Vector2(174, 101)

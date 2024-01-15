@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://25c2njvv84ol"]
+
+[ext_resource type="Texture2D" uid="uid://byogxooaxflh" path="res://terrain/assets/interior/sprite jarro.png" id="1_dqf8u"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hh215"]
+size = Vector2(31, 26)
+
+[node name="jarro" type="CharacterBody2D"]
+position = Vector2(45, 32)
+
+[node name="texture" type="Sprite2D" parent="."]
+position = Vector2(9.12499, -0.0942254)
+scale = Vector2(0.0386574, 0.0386574)
+texture = ExtResource("1_dqf8u")
+
+[node name="Collision" type="CollisionShape2D" parent="."]
+position = Vector2(10.5, 19)
+shape = SubResource("RectangleShape2D_hh215")

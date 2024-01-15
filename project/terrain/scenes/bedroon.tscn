@@ -1,0 +1,80 @@
+[gd_scene load_steps=11 format=3 uid="uid://cld3ct2b3rjra"]
+
+[ext_resource type="Texture2D" uid="uid://bj6w1ua2v072e" path="res://terrain/assets/base_terrain/quarto sem detalhes.png" id="1_w8g1v"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_dbuyc"]
+size = Vector2(1007.1, 281.171)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_c4oh1"]
+size = Vector2(265.834, 276.059)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_guqs1"]
+size = Vector2(373.186, 118.649)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lrm3f"]
+size = Vector2(125.647, 179.447)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_jy2qu"]
+radius = 61.3995
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ctofe"]
+size = Vector2(1032.66, 113.429)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vko61"]
+size = Vector2(90.3736, 848.625)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qyayf"]
+size = Vector2(161.042, 863.962)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_x1cud"]
+size = Vector2(97.1317, 81.5708)
+
+[node name="Node2D" type="Node2D"]
+position = Vector2(-18, -9)
+
+[node name="texture" type="Sprite2D" parent="."]
+position = Vector2(186.112, 99.9614)
+scale = Vector2(0.307609, 0.307609)
+texture = ExtResource("1_w8g1v")
+
+[node name="map" type="StaticBody2D" parent="texture"]
+
+[node name="parede" type="CollisionShape2D" parent="texture/map"]
+position = Vector2(2.55585, -288.839)
+shape = SubResource("RectangleShape2D_dbuyc")
+
+[node name="cama" type="CollisionShape2D" parent="texture/map"]
+position = Vector2(-347.629, -15.3366)
+shape = SubResource("RectangleShape2D_c4oh1")
+
+[node name="mesa2" type="CollisionShape2D" parent="texture/map"]
+position = Vector2(319.515, -101.598)
+shape = SubResource("RectangleShape2D_guqs1")
+
+[node name="mesa1" type="CollisionShape2D" parent="texture/map"]
+position = Vector2(433.06, 7.92838)
+shape = SubResource("RectangleShape2D_lrm3f")
+
+[node name="mesinha" type="CollisionShape2D" parent="texture/map"]
+position = Vector2(-40.8976, 122.693)
+scale = Vector2(1, 0.999999)
+shape = SubResource("CircleShape2D_jy2qu")
+
+[node name="parede-2" type="CollisionShape2D" parent="texture/map"]
+position = Vector2(5.11194, 459.949)
+scale = Vector2(1, 0.999999)
+shape = SubResource("RectangleShape2D_ctofe")
+
+[node name="parede-3" type="CollisionShape2D" parent="texture/map"]
+position = Vector2(531.333, -5.11218)
+scale = Vector2(1, 0.999999)
+shape = SubResource("RectangleShape2D_vko61")
+
+[node name="parede-4" type="CollisionShape2D" parent="texture/map"]
+position = Vector2(-569.898, -2.55609)
+scale = Vector2(1, 0.999999)
+shape = SubResource("RectangleShape2D_qyayf")
+
+[node name="criado mudo" type="CollisionShape2D" parent="texture/map"]
+position = Vector2(-166.146, -133.029)
+shape = SubResource("RectangleShape2D_x1cud")
